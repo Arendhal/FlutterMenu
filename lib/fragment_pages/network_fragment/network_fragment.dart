@@ -4,16 +4,14 @@ import 'package:map_view/map_options.dart';
 import 'package:map_view/map_view.dart';
 import 'dart:async';
 
+
 var apikey = "AIzaSyA4Z8pUR_fo7awWg6AONZe8HbHNzWo4K5w";
 
 class NetworkFragment extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return new MaterialApp(
-      theme: new ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: new MapPage(),
+    return new Scaffold(
+      body: new MapPage(),
     );
   }
 }
@@ -77,7 +75,15 @@ class MapPageState extends State<MapPage> {
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: new AppBar(
-        title: new Text("Carte Réseau de la SAPHIR"),
+        title: new Text(" Réseau de la SAPHIR"),
+        leading: new Container(
+                margin: const EdgeInsets.all(1.0),
+                child: new GestureDetector(
+                    onTap: () {
+                      Navigator.pop(context);
+                    },
+                    child: new Icon(Icons.arrow_back_ios,
+                        color: Colors.white, size: 30.0)))
       ),
       body: new Center(
           child: new Column(

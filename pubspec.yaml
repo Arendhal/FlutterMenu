@@ -16,7 +16,15 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
+  
+  flutter_launcher_icons: "^0.5.2"
+  
+flutter_icons: 
+  image_path: "assets/icons/saphirlogo.png"
+  #image_path_ios: "assets/icons/logo_saphir2.png"
+  android: true
+  ios: true 
+  
 
 # For information on the generic Dart part of this file, see the
 # following page: https://www.dartlang.org/tools/pub/pubspec
@@ -31,13 +39,23 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-   - assets/pages/service_page1.jpg
-   - assets/pages/service_page2.jpg
-   - assets/pages/service_page3.jpg
+   - assets/pages/service_page/service_page1.jpg
+   - assets/pages/service_page/service_page2.jpg
+   - assets/pages/service_page/service_page3.jpg
+   - assets/pages/service_page/service_page4.jpg
 
-   - assets/subscribe/abo_slide1.jpg
-   - assets/subscribe/abo_slide2.jpg
-   - assets/subscribe/abo_slide3.jpg
+   - assets/pages/subscribe_page/abo_slide1.jpg
+   - assets/pages/subscribe_page/abo_slide2.jpg
+   - assets/pages/subscribe_page/abo_slide3.jpg
+
+   - assets/pages/news_page/news_page1.png
+   - assets/pages/news_page/news_page2.png
+   - assets/pages/news_page/news_page3.png
+   - assets/pages/news_page/news_page4.png
+   - assets/pages/news_page/news_page5.png
+   - assets/pages/news_page/avatar/avatar-1.jpg
+   - assets/pages/news_page/avatar/avatar-2.jpg
+   
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.io/assets-and-images/#resolution-aware.

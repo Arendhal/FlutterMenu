@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:meta/meta.dart';
 import 'data.dart';
 import 'package:fluttermenu/routes.dart';
+import 'package:fluttermenu/fragment_pages/subscribe_fragment/subscribe_fragment.dart';
 import 'page_transformer.dart';
 
 class ServicePageItem extends StatelessWidget {
@@ -24,13 +25,17 @@ class ServicePageItem extends StatelessWidget {
         Navigator.of(context).pushNamed(shopFragmentRoute);
         break;
       case "ABONNEMENT":
-        Navigator.of(context).pushNamed(subscribeFragmentRoute);
+        Navigator.push(context, new MaterialPageRoute(builder: (BuildContext context) => new SubscribeFragment()));
+        //Navigator.of(context).pushNamed(subscribeFragmentRoute);
         break;
       case "RESEAU":
         Navigator.of(context).pushNamed(networkFragmentRoute);
         break;
+      case "ACTUALITES":
+        Navigator.of(context).pushNamed(newsFragmentRoute);
+        break;
       default:
-        Navigator.of(context).pushNamed(serviceFragmentRoute);
+        Navigator.of(context).pushNamed(home);
     }
   }
 
