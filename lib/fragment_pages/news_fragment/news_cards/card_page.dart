@@ -80,6 +80,10 @@ class CardPageState extends State<CardPage> with TickerProviderStateMixin {
     if (index == 0) {
       setState(() {
         index = 1;
+        if(imageData.length!=0)
+        {
+         imageData.length--;
+        }
       });
       _swipeAnimation();
     }

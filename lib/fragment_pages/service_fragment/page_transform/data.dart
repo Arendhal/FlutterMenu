@@ -31,4 +31,9 @@ final sampleItems = <ServiceItem>[
     category: "ACTUALITES",
     imageUrl: 'assets/pages/service_page/service_page4.jpg',
   ),
+  new ServiceItem(
+    title: "Contactez nous!",
+    category : "CONTACT",
+    imageUrl: 'assets/pages/service_page/service_page5.jpg',
+  )
 ];
