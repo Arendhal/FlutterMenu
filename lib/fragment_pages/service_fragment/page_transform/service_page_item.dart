@@ -34,6 +34,9 @@ class ServicePageItem extends StatelessWidget {
       case "ACTUALITES":
         Navigator.of(context).pushNamed(newsFragmentRoute);
         break;
+      case "CONTACT":
+        Navigator.of(context).pushNamed(contactFragmentRoute);
+        break;
       default:
         Navigator.of(context).pushNamed(home);
     }
