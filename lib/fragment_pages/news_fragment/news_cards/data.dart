@@ -27,5 +27,5 @@ ImageProvider avatar1 =
 ImageProvider avatar2 =
     new AssetImage('assets/pages/news_page/avatar/avatar-2.jpg');
 
-List imageData = [image4, image3, image2, image1, image5];
+List imageData = [image1, image3, image4, image2, image5]; //pictures must be in reverse order to correspond with the text
 

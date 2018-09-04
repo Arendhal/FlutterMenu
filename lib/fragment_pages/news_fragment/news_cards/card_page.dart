@@ -82,7 +82,7 @@ class CardPageState extends State<CardPage> with TickerProviderStateMixin {
         index = 1;
         if(imageData.length!=0)
         {
-         imageData.length--;
+         dismissCardImage(imageData.elementAt(index));
         }
       });
       _swipeAnimation();
@@ -93,6 +93,10 @@ class CardPageState extends State<CardPage> with TickerProviderStateMixin {
     if (index == 1) {
       setState(() {
         index = 0;
+        if(imageData.length!=0)
+        {
+        dismissCardImage(imageData.elementAt(index));
+        }
       });
     }
     _swipeAnimation();
@@ -194,7 +198,7 @@ class CardPageState extends State<CardPage> with TickerProviderStateMixin {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       new Center(
-                          child: new Text("Plus d'Actus ",
+                          child: new Text("Plus d'actus ",
                               style: new TextStyle(
                                   color: Colors.black, fontSize: 50.0))),
                       new Padding(

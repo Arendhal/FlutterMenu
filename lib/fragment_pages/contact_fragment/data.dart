@@ -14,14 +14,14 @@ enum MenuOptions{
 final List<RadialMenuItem<MenuOptions>> items = <RadialMenuItem<MenuOptions>>[
     new RadialMenuItem<MenuOptions>(
       value: MenuOptions.agenceSud,
-      child:new FloatingActionButton(
-        heroTag: "agenceSud",
-        onPressed: () => (){
-          launch("tel://0262961920");
-        },
-        child: new Icon(Icons.call),
-        backgroundColor: Colors.blue[400],
-      ),
+      child: new FloatingActionButton(
+            heroTag: "agenceSud",
+            onPressed: () => (){
+            launch("tel://0262961920");
+            },
+            child : new Icon(Icons.call),
+            backgroundColor: Colors.blue[400],
+          ),
       iconColor: Colors.white,
        tooltip: "Contactez notre Agence Sud",
     ),
